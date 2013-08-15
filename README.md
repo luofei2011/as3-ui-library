@@ -1,6 +1,6 @@
-==1. Button类==
+## 1. Button类
 
-===API===
+### API
 
 > 可选的按钮属性
 
@@ -34,7 +34,7 @@
       MouseOver MouseOut MouseDown MouseUp Click
      */
 
-===USE===
+### USE
 
     // 先定义好button的样式
     var testBtn:Button = new Button({
@@ -66,8 +66,8 @@
         }
     });
 
-==Version 0.1==
+## Version 0.1
 
-==About me==
+## About me
 
 [http://poised-flw.com](http://poised-flw.com)

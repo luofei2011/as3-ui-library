@@ -152,6 +152,23 @@ package ui
 			_btnMask.graphics.endFill();
 			_btnMask.buttonMode = true;
 		}
+
+        /*
+         * @method 插件内置事件监听器
+         * */
+        private function innerEventListener():void {
+            if (_options._btnBg != _options._btnOver) {
+                _btnMask.addEventListener(MouseEvent.MOUSE_OVER, function():void {
+                    drawBg(_options._btnOver);
+                    _btnTxt.textColor = _options._btnTxtOver;
+                });
+
+                _btnMask.addEventListener(MouseEvent.MOUSE_UP, function():void {
+                    drawBg(_options._btnBg);
+                    _btnTxt.textColor = _options._btnTxtBg;
+                });
+            }
+        }
 		
         /*
          * @method 给按钮绑定指定的事件
